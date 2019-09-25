@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相册</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<style type="text/css">
+.left{
+    position: fixed;
+    width: 10%;
+    text-align: center;
+    top:250px;
+    left: 10px;
+}
+.right{
+    position: fixed;
+    width: 10%;
+    text-align: center;
+    top:250px;
+    right: 10px;
+}
+@-webkit-keyframes shake{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}@keyframes shake{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.shake{
+    position: relative;
+    -webkit-animation: shake 2s infinite;
+    animation: shake 2s infinite;
+}
+.shake:hover{
+    box-shadow: 0px 0px 10px 10px #ffffff8c;
+}
+.audio{
+    position: fixed;
+    top: 10;
+}
+</style>
+<body>  
+<div>
+<audio class="audio" src="http://music.163.com/song/media/outer/url?id=16846088" controls="controls" autoplay="autoplay" loop="loop"></audio>
+    <div class="left">
+        <a href="video.html"><img class="shake" src="font/left.png" title="查看视频"></a>
+    </div>
+    <div class="right">
+       <a href="video.html"><img class="shake" src="font/right.png" title="查看视频"></a>
+    </div>
+</div>
+    <div class="wrapper init">
+        <ul class="content">
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>初遇</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>皑如山上雪，皎若云中月。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>花浓</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>那天步行十里，今日也有春风。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>看海</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>沐日光华还浴月，我欲乘桴。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>低语</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>有梦可依，未来可期。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>请期</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>往后余生，与子偕老。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+            <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>合家</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>阖家欢乐。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+             <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>青庐</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>安居偶佳赏，丹心期此论。</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+             <li class="item">
+                <div class="inner">
+                    <div class="bjPic"></div>
+                    <div class="dir">
+                        <h2>同心</h2>
+                    </div>
+                    <div class="showBox">
+                        <div class="showBox-dir">
+                            <h2>结发为夫妻,恩爱两不疑</h2>
+                        </div>
+                        <div class="close">
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/photo.js"></script>
+    <script src="js/snowflake.js"></script>
+    
+</body>
+</html>

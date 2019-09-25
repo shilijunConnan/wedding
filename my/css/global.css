@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+html{
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+a,img{
+	border:0;
+}
+body{
+	font:12px/180% Arial, Helvetica, sans-serif, "新宋体";
+}
+#sakura{
+    position: fixed;
+    z-index: -999;
+}
+.page{
+	z-index: 999;
+	width:100%;
+	position: absolute;
+}
+.left{
+	position: fixed;
+	width: 10%;
+	text-align: center;
+	top:250px;
+	left: 10px;
+}
+.middle{
+	width: 80%;
+	margin: 2rem auto;
+	background-color: white;
+	color: black;
+}
+.right{
+	position: fixed;
+	width: 10%;
+	text-align: center;
+	top:250px;
+	right: 10px;
+}
+@-webkit-keyframes shake{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}@keyframes shake{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.shake{
+	position: relative;
+    -webkit-animation: shake 2s infinite;
+    animation: shake 2s infinite;
+}
+.shake1:hover{
+    box-shadow: 0px 0px 10px 10px #ffffff8c;
+}
+.shake2:hover{
+    box-shadow: 0px 0px 10px 10px #1b191999;
+}
